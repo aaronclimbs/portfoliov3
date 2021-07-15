@@ -1,30 +1,33 @@
 import React from 'react'
 import { Nav, NavbarContainer, NavLogo, NavMenu, NavItem, NavLink, MobileIcon, NavBtn, NavBtnLink } from "./NavbarElements"
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaGithub } from 'react-icons/fa'
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <>
       <Nav>
-        <NavbarContainer>
-          <NavLogo to="/">Me</NavLogo>
-          <MobileIcon>
-            <FaBars color="#fff"/>
+        <NavbarContainer data-testid="nav-container">
+          <NavLogo to="/" data-testid="nav-logo">Me</NavLogo>
+          <MobileIcon data-testid="nav-mobile-icon">
+            <FaBars color="#fff" onClick={toggleSidebar} />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLink to="about">/about</NavLink>
+              <NavLink to="about" data-testid="nav-link">about</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="projects">/projects</NavLink>
+              <NavLink to="projects">projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="contact">/contact</NavLink>
+              <NavLink to="contact">contact</NavLink>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-            {/* <FaGithub/> */}
+            <NavBtnLink to='/signin' data-testid="nav-route">
+              <a href="https://www.github.com/aaronclimbs">
+                <FaGithub color="white" size={30} />
+              </a>
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
