@@ -5,6 +5,7 @@ import { homeObjOne } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import ServicesSection from "../components/ServicesSection";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -24,6 +25,7 @@ const Home = () => {
         <InfoSection {...item} key={index} />
       ))}
       <ServicesSection />
+      <Footer/>
     </>
   );
 };
