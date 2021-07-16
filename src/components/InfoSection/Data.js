@@ -17,7 +17,8 @@ export const homeObjOne = [
     primary: true,
     darkText: false,
     repoLink: "https://github.com/aaronclimbs/greenpoint",
-    liveLink: "https://glacial-peak-greenpoint.herokuapp.com/"
+    liveLink: "https://glacial-peak-greenpoint.herokuapp.com/",
+    screenshots: [require("../../assets/images/GreenpointFAQ.png"), require("../../assets/images/GreenpointHomepage.png")]
   },
   {
     id: "meiplaw",
@@ -37,7 +38,8 @@ export const homeObjOne = [
     primary: true,
     darkText: true,
     repoLink: "https://github.com/aaronclimbs/meiplawv2",
-    liveLink: "https://www.meiplaw.com"
+    liveLink: "https://www.meiplaw.com",
+    // screenshots: [require("../../assets/images/MeiplawCover.png"), require("../../assets/images/MeiplawCases.png")]
   },
   {
     id: "flexpace",
@@ -57,7 +59,8 @@ export const homeObjOne = [
     primary: true,
     darkText: false,
     repoLink: "https://github.com/aaronclimbs/flexspace",
-    liveLink: "https://gwbootcampflexspace.herokuapp.com/"
+    liveLink: "https://gwbootcampflexspace.herokuapp.com/",
+    screenshots: [require("../../assets/images/FlexspaceCover2.png"), require("../../assets/images/FlexspaceSignup.png")]
   },
   {
     id: "herbal",

@@ -97,6 +97,7 @@ export const NavBtnLink = styled(LinkRouter)`
   background: #01bf71;
   white-space: nowrap;
   padding: 10px 22px;
+  margin: 0 5px;
   font-size: 16px;
   outline: none;
   border: none;
@@ -110,4 +111,23 @@ export const NavBtnLink = styled(LinkRouter)`
     color: #01bf71;
   }
   
+`
+export const NavSocialLink = styled.a`
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 10px 22px;
+  margin: 0 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #01bf71;
+  }
 `

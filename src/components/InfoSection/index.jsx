@@ -12,6 +12,9 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  Screenshot,
+  ScreenshotRow,
+  ScreenshotWrap,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -27,7 +30,8 @@ const InfoSection = ({
   img,
   alt,
   dark,
-  dark2
+  dark2,
+  screenshots,
 }) => {
   return (
     <>
@@ -48,9 +52,10 @@ const InfoSection = ({
                     spy={true}
                     offset={-80}
                     exact="true"
-                  dark={dark ? 1 : 0} dark2={dark2 ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
                   >
-                    {buttonLabel} 
+                    {buttonLabel}
                   </Button>
                 </BtnWrap>
               </TextWrapper>
@@ -61,6 +66,14 @@ const InfoSection = ({
               </ImgWrap>
             </Column2>
           </InfoRow>
+          <ScreenshotRow>
+            {screenshots &&
+              screenshots.map((screenshot) => (
+                <ScreenshotWrap>
+                  <Screenshot src={screenshot.default} alt="" />
+                </ScreenshotWrap>
+              ))}
+          </ScreenshotRow>
         </InfoWrapper>
       </InfoContainer>
     </>

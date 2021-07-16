@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "asvetliakov.vscode-neovim",
-        "bradlc.vscode-tailwindcss",
         "jpoissonnier.vscode-styled-components",
         "dsznajder.es7-react-js-snippets"
     ]

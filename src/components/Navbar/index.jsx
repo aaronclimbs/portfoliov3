@@ -1,8 +1,20 @@
-import React from 'react'
-import { Nav, NavbarContainer, NavLogo, NavMenu, NavItem, NavLink, MobileIcon, NavBtn, NavBtnLink } from "./NavbarElements"
-import { FaBars, FaGithub } from 'react-icons/fa'
+import {useState} from 'react'
+import { Nav, NavbarContainer, NavLogo, NavMenu, NavItem, NavLink, MobileIcon, NavBtn, NavBtnLink, NavSocialLink } from "./NavbarElements"
+import { FaBars, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Navbar = ({ toggleSidebar }) => {
+  
+  const [isGithubHovered, setGithubHovered] = useState(false)
+  const [isLinkedInHovered, setLinkedInHovered] = useState(false)
+  
+  const handleGithubHover = () => {
+    setGithubHovered(!isGithubHovered)
+  }
+  
+  const handleLinkedInHover = () => {
+    setLinkedInHovered(!isLinkedInHovered)
+  }
+
   return (
     <>
       <Nav>
@@ -23,11 +35,13 @@ const Navbar = ({ toggleSidebar }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/signin' data-testid="nav-route">
-              <a href="https://www.github.com/aaronclimbs">
-                <FaGithub color="white" size={30} />
-              </a>
-            </NavBtnLink>
+            <NavBtnLink to="/signin" data-testid="nav-btn-link">Sign in</NavBtnLink>
+            <NavSocialLink onMouseEnter={handleGithubHover} onMouseLeave={handleGithubHover} href="https://www.github.com/aaronclimbs" data-testid="nav-route">
+                <FaGithub color={isGithubHovered ? "black" : "white"} size={30} />
+            </NavSocialLink>
+            <NavSocialLink onMouseEnter={handleLinkedInHover} onMouseLeave={handleLinkedInHover} href="https://www.linkedin.com/in/akeisler" data-testid="nav-route">
+                <FaLinkedin color={isLinkedInHovered ? "black" : "white"} size={30} />
+            </NavSocialLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

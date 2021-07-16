@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#060606')};
+    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
     
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -12,12 +12,12 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 100%;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 24px;
     justify-content: center;
 `
 
@@ -92,4 +92,28 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+`
+
+export const ScreenshotWrap = styled(ImgWrap)`
+    height: 100%;
+`
+
+export const ScreenshotRow = styled(InfoRow)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+`;
+
+
+export const Screenshot = styled.img`
+    padding: 20px;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    object-position: 0 0;
+    border-radius: 10%;
 `
