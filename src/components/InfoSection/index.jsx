@@ -68,8 +68,8 @@ const InfoSection = ({
           </InfoRow>
           <ScreenshotRow>
             {screenshots &&
-              screenshots.map((screenshot) => (
-                <ScreenshotWrap>
+              screenshots.map((screenshot, index) => (
+                <ScreenshotWrap key={index}>
                   <Screenshot src={screenshot.default} alt="" />
                 </ScreenshotWrap>
               ))}

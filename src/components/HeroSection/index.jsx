@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Typewriter from "typewriter-effect";
 import Video from "../../assets/videos/dots.mp4";
+import Typewriter from 'typewriter-effect'
 import {
   HeroBg,
   HeroBtnWrapper,
@@ -11,6 +11,8 @@ import {
   VideoBg,
   ArrowForward,
   ArrowRight,
+  TypewriterWrapper,
+  HeroPPadded
 } from "./HeroElements";
 import { Button } from "../ButtonElement";
 
@@ -35,24 +37,25 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Hey! I'm Aaron.</HeroH1>
-        <div style={{ display: "flex" }}>
+        <TypewriterWrapper>
           <HeroP>I'm</HeroP>
-          <HeroP style={{ paddingLeft: "10px" }}>
-            {" "}
-            <Typewriter
-              options={{
-                loop: true,
-                strings: [
-                  "a <strong>developer</strong>.",
-                  "a <strong>climber</strong>.",
-                  "a legal <strong>technologist</strong>.",
-                  "a constant <strong>learner</strong>.",
-                ],
-                autoStart: true,
-              }}
-            />
-          </HeroP>
-        </div>
+          <HeroPPadded> </HeroPPadded>
+          <Typewriter
+            options={{
+              loop: true,
+              strings: [
+                "a <strong>developer</strong>.",
+                "a <strong>climber</strong>.",
+                "a <strong>engineer</strong>.",
+                "a legal <strong>technologist</strong>.",
+                "a <strong>designer</strong>.",
+                "a constant <strong>learner</strong>.",
+              ],
+              autoStart: true,
+            }}
+          />
+        </TypewriterWrapper>
+        <HeroP>Please take a look at look at my current/past projects.</HeroP>
         <HeroBtnWrapper>
           <Button
             data-testid="hero-signup-button"
@@ -62,7 +65,7 @@ const HeroSection = () => {
             primary="true"
             dark="true"
           >
-            Contact me! {isHovered ? <ArrowForward /> : <ArrowRight />}
+            Get in touch! {isHovered ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

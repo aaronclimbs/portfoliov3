@@ -8,7 +8,7 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
-  SidebarRoute,
+  // SidebarRoute,
   SidebarSocialLink,
 } from "./SidebarElements";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -51,9 +51,9 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="/signin" onClick={toggleSidebar}>
+            {/* <SidebarRoute to="/signin" onClick={toggleSidebar}>
               Sign in
-            </SidebarRoute>
+            </SidebarRoute> */}
             <SidebarSocialLink
               href="https://www.github.com/aaronclimbs"
               data-testid="sidebar-route"

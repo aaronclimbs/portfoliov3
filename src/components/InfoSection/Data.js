@@ -80,6 +80,6 @@ export const homeObjOne = [
     primary: false,
     darkText: true,
     repoLink: "",
-    liveLink: ""
+    liveLink: "https://herbalremedyrepository.com"
   },
 ];

@@ -79,6 +79,33 @@ export const HeroP = styled.p`
     }
 `
 
+export const HeroPPadded = styled(HeroP)`
+    padding-left: 10px;
+
+`
+
+export const TypewriterWrapper = styled.div`
+    display: flex;
+    align-items: baseline;
+
+    .Typewriter__wrapper {
+        margin-top: 24px;
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        max-width: 600px;
+        
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 18px;
+        }
+    }
+`
+
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
