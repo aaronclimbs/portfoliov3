@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MdKeyboardArrowUp, MdLandscape } from 'react-icons/md'
+import { MdKeyboardArrowUp, MdLandscape } from "react-icons/md";
 
 export const InfoContainer = styled.div`
   color: #fff;
@@ -122,10 +122,10 @@ export const Screenshot = styled.img`
 `;
 
 export const ArrowMountain = styled(MdLandscape)`
-    margin-left: 8px;
-    font-size: 20px;
-`
+  margin-left: 8px;
+  font-size: 20px;
+`;
 export const ArrowUpwards = styled(MdKeyboardArrowUp)`
-    margin-left: 8px;
-    font-size: 20px;
-`
+  margin-left: 8px;
+  font-size: 20px;
+`;

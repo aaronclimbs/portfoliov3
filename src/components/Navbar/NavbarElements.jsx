@@ -1,5 +1,5 @@
 import { Link as LinkRouter } from "react-router-dom";
-import { Link as LinkScroll } from 'react-scroll';
+import { Link as LinkScroll } from "react-scroll";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
@@ -51,7 +51,7 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
   }
-`
+`;
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -59,15 +59,15 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -22px;
-  
+
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 export const NavItem = styled.li`
   height: 80px; // height of navbar
-`
+`;
 
 export const NavLink = styled(LinkScroll)`
   color: #fff;
@@ -77,11 +77,11 @@ export const NavLink = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  
+
   &:active {
     border-bottom: 3px solid #01bf71;
   }
-`
+`;
 
 export const NavBtn = styled.nav`
   display: flex;
@@ -90,7 +90,7 @@ export const NavBtn = styled.nav`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
@@ -104,14 +104,13 @@ export const NavBtnLink = styled(LinkRouter)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  
+
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #01bf71;
   }
-  
-`
+`;
 export const NavSocialLink = styled.a`
   border-radius: 50px;
   background: #01bf71;
@@ -124,10 +123,10 @@ export const NavSocialLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  
+
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #01bf71;
   }
-`
+`;

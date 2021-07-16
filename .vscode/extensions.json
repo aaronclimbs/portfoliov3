@@ -1,7 +1,7 @@
 {
-    "recommendations": [
-        "asvetliakov.vscode-neovim",
-        "jpoissonnier.vscode-styled-components",
-        "dsznajder.es7-react-js-snippets"
-    ]
+  "recommendations": [
+    "asvetliakov.vscode-neovim",
+    "jpoissonnier.vscode-styled-components",
+    "dsznajder.es7-react-js-snippets"
+  ]
 }

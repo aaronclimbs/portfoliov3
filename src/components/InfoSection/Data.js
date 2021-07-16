@@ -6,8 +6,7 @@ export const homeObjOne = [
     lightTextDesc: true,
     topline: "Bootcamp Project",
     headline: "GreenPoint",
-    description:
-      "Keep track of your sustainable activities.",
+    description: "Keep track of your sustainable activities.",
     buttonLabel: "Get started now!",
     imgStart: false,
     img: require("../../assets/images/svg-3.svg"),
@@ -18,7 +17,10 @@ export const homeObjOne = [
     darkText: false,
     repoLink: "https://github.com/aaronclimbs/greenpoint",
     liveLink: "https://glacial-peak-greenpoint.herokuapp.com/",
-    screenshots: [require("../../assets/images/GreenpointFAQ.png"), require("../../assets/images/GreenpointHomepage.png")]
+    screenshots: [
+      require("../../assets/images/GreenpointFAQ.png"),
+      require("../../assets/images/GreenpointHomepage.png"),
+    ],
   },
   {
     id: "meiplaw",
@@ -27,8 +29,7 @@ export const homeObjOne = [
     lightTextDesc: true,
     topline: "Freelance/Work Project",
     headline: "Maddox Edwards",
-    description:
-      "A boutique IP law firm in Washington, DC",
+    description: "A boutique IP law firm in Washington, DC",
     buttonLabel: "Defend your IP.",
     imgStart: true,
     img: require("../../assets/images/svg-4.svg"),
@@ -48,8 +49,7 @@ export const homeObjOne = [
     lightTextDesc: true,
     topline: "Bootcamp Project",
     headline: "Flexspace",
-    description:
-      "Don't leave those conference rooms unused!",
+    description: "Don't leave those conference rooms unused!",
     buttonLabel: "Rent your rooms now.",
     imgStart: false,
     img: require("../../assets/images/svg-1.svg"),
@@ -60,7 +60,10 @@ export const homeObjOne = [
     darkText: false,
     repoLink: "https://github.com/aaronclimbs/flexspace",
     liveLink: "https://gwbootcampflexspace.herokuapp.com/",
-    screenshots: [require("../../assets/images/FlexspaceCover2.png"), require("../../assets/images/FlexspaceSignup.png")]
+    screenshots: [
+      require("../../assets/images/FlexspaceCover2.png"),
+      require("../../assets/images/FlexspaceSignup.png"),
+    ],
   },
   {
     id: "herbal",
@@ -80,6 +83,6 @@ export const homeObjOne = [
     primary: false,
     darkText: true,
     repoLink: "",
-    liveLink: "https://herbalremedyrepository.com"
+    liveLink: "https://herbalremedyrepository.com",
   },
 ];

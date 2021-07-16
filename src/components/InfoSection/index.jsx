@@ -1,5 +1,5 @@
 import { Button, ButtonExt } from "../ButtonElement";
-import {useState} from "react";
+import { useState } from "react";
 import {
   InfoContainer,
   InfoWrapper,
@@ -17,7 +17,7 @@ import {
   ScreenshotRow,
   ScreenshotWrap,
   ArrowMountain,
-  ArrowUpwards
+  ArrowUpwards,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -64,7 +64,8 @@ const InfoSection = ({
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHover}
                   >
-                    Scroll back up {isHovered ? <ArrowMountain /> : <ArrowUpwards />}
+                    Scroll back up{" "}
+                    {isHovered ? <ArrowMountain /> : <ArrowUpwards />}
                   </Button>
                 </BtnWrap>
                 <BtnWrap>
