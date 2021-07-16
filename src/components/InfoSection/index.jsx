@@ -1,4 +1,5 @@
-import { Button } from "../ButtonElement";
+import { Button, ButtonExt } from "../ButtonElement";
+import {useState} from "react";
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,6 +16,8 @@ import {
   Screenshot,
   ScreenshotRow,
   ScreenshotWrap,
+  ArrowMountain,
+  ArrowUpwards
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -32,7 +35,11 @@ const InfoSection = ({
   dark,
   dark2,
   screenshots,
+  liveLink,
+  repoLink,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleHover = () => setIsHovered(!isHovered);
   return (
     <>
       <InfoContainer lightBg={lightBg}>
@@ -54,9 +61,43 @@ const InfoSection = ({
                     exact="true"
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
+                    onMouseEnter={handleHover}
+                    onMouseLeave={handleHover}
                   >
-                    {buttonLabel}
+                    Scroll back up {isHovered ? <ArrowMountain /> : <ArrowUpwards />}
                   </Button>
+                </BtnWrap>
+                <BtnWrap>
+                  {liveLink && (
+                    <ButtonExt
+                      href={liveLink}
+                      primary={primary ? 1 : 0}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      offset={-80}
+                      exact="true"
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      Live
+                    </ButtonExt>
+                  )}
+                  {repoLink && (
+                    <ButtonExt
+                      href={repoLink}
+                      primary={primary ? 1 : 0}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      offset={-80}
+                      exact="true"
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      Repo
+                    </ButtonExt>
+                  )}
                 </BtnWrap>
               </TextWrapper>
             </Column1>
