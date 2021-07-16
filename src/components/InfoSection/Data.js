@@ -37,7 +37,7 @@ export const homeObjOne = [
     dark2: false,
     primary: false,
     darkText: false,
-    repoLink: "https://github.com/aaronclimbs/meiplawv2",
+    repoLink: "",
     liveLink: "https://www.meiplaw.com",
     // screenshots: [require("../../assets/images/MeiplawCover.png"), require("../../assets/images/MeiplawCases.png")]
   },
