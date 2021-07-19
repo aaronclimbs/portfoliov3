@@ -1,4 +1,4 @@
-export const homeObjOne = [
+export const homeObj = [
   {
     id: "greenpoint",
     lightBg: false,
@@ -22,13 +22,13 @@ export const homeObjOne = [
       require("../../assets/images/GreenpointHomepage.png"),
     ],
     stack: [
+      "Bootstrap",
+      "CSS3",
+      "HTML5",
+      "Javascript",
+      "JWT",
       "MongoDB",
       "ReactJS",
-      "ES6",
-      "HTML5",
-      "CSS3",
-      "JWT",
-      "React-bootstrap",
     ],
   },
   {
@@ -50,7 +50,7 @@ export const homeObjOne = [
     repoLink: "",
     liveLink: "https://www.meiplaw.com",
     // screenshots: [require("../../assets/images/MeiplawCover.png"), require("../../assets/images/MeiplawCases.png")],
-    stack: ["TailwindCSS, ReactJS, Wordpress, GraphQL, ES6"],
+    stack: ["GraphQL", "Javascript", "ReactJS", "TailwindCSS", "Wordpress"],
   },
   {
     id: "flexpace",
@@ -75,15 +75,14 @@ export const homeObjOne = [
       require("../../assets/images/FlexspaceSignup.png"),
     ],
     stack: [
-      "Node.js",
-      "ES6",
-      "HTML5",
       "CSS3",
-      "PassportJS",
       "Express",
-      "SQL",
+      "HTML5",
+      "Javascript",
+      "MYSQL",
+      "Node.js",
+      "PassportJS",
       "Sequelize",
-      "EJS",
     ],
   },
   {
@@ -105,85 +104,117 @@ export const homeObjOne = [
     darkText: true,
     repoLink: "",
     liveLink: "https://herbalremedyrepository.com",
-    stack: ["NextJS", "ReactJS", "TailwindCSS"],
+    stack: ["Javascript", "NextJS", "ReactJS", "TailwindCSS"],
   },
 ];
 
 export const techIcons = {
-  NextJS: {
-    img: require("../../assets/images/logos/NextJS.png"),
-    name: "NextJS",
-  },
-  "Node.js": {
-    img: require("../../assets/images/logos/Node.png"),
-    name: "Node.js",
-  },
-  ES6: {
-    img: require("../../assets/images/logos/ES6.png"),
-    name: "ES6",
-  },
-  HTML5: {
-    img: require("../../assets/images/logos/HTML5.png"),
-    name: "HTML5",
-  },
-  CSS3: {
-    img: require("../../assets/images/logos/CSS3.png"),
-    name: "CSS3",
-  },
-  PassportJS: {
-    img: require("../../assets/images/logos/PassportJS.png"),
-    name: "PassportJS",
-  },
-  Express: {
-    img: require("../../assets/images/logos/Express.png"),
-    name: "Express",
-  },
-  SQL: {
-    img: require("../../assets/images/logos/SQL.png"),
-    name: "SQL",
-  },
-  Sequelize: {
-    img: require("../../assets/images/logos/Sequelize.png"),
-    name: "Sequelize",
-  },
-  EJS: {
-    img: require("../../assets/images/logos/EJS.png"),
-    name: "EJS",
-  },
-  TailwindCSS: {
-    img: require("../../assets/images/logos/TailwindCSS.png"),
-    name: "TailwindCSS",
-  },
-  "Styled-components": {
-    img: require("../../assets/images/logos/Styled.png"),
-    name: "Styled-components",
-  },
-  GraphQL: {
-    img: require("../../assets/images/logos/GraphQL.png"),
-    name: "GraphQL",
-  },
-  MongoDB: {
-    img: require("../../assets/images/logos/MongoDB.png"),
-    name: "MongoDB",
-  },
-  Mongoose: {
-    img: require("../../assets/images/logos/Mongoose.png"),
-    name: "Mongoose",
-  },
-  Wordpress: {
-    img: require("../../assets/images/logos/Wordpress.png"),
-    name: "Wordpress",
-  },
-  ReactJS: {
-    img: require("../../assets/images/logos/ReactJS.png"),
-    name: "ReactJS",
-  },
-  JWT: {
-    img: require("../../assets/images/logos/JWT.png"),
-    name: "JSONWebTokens",
+  Bash: {
+    img: require("../../assets/images/logos/bash.svg"),
+    name: "Bash"
   },
   Bootstrap: {
-    img: require("../../assets/images/logos/Bootstrap.png"),
-    name: "Bootstrap",
+    img: require("../../assets/images/logos/bootstrap.svg"),
+    name: "Bootstrap"
   },
-};
+  CSS3: {
+    img: require("../../assets/images/logos/css3.svg"),
+    name: "CSS3"
+  },
+  Express: {
+    img: require("../../assets/images/logos/express.jpg"),
+    name: "Express"
+  },
+  Firebase: {
+    img: require("../../assets/images/logos/firebase.svg"),
+    name: "Firebase"
+  },
+  Gatsby: {
+    img: require("../../assets/images/logos/gatsby.svg"),
+    name: "Gatsby"
+  },
+  Git: {
+    img: require("../../assets/images/logos/git.svg"),
+    name: "Git"
+  },
+  GraphQL: {
+    img: require("../../assets/images/logos/graphql.svg"),
+    name: "GraphQL"
+  },
+  Heroku: {
+    img: require("../../assets/images/logos/heroku.svg"),
+    name: "Heroku"
+  },
+  HTML5: {
+    img: require("../../assets/images/logos/html5.svg"),
+    name: "HTML5"
+  },
+  Javascript: {
+    img: require("../../assets/images/logos/javascript.svg"),
+    name: "Javascript"
+  },
+  JWT: {
+    img: require("../../assets/images/logos/jwt.svg"),
+    name: "JSONWebTokens"
+  },
+  Linux: {
+    img: require("../../assets/images/logos/linux.svg"),
+    name: "Linux"
+  },
+  MongoDB: {
+    img: require("../../assets/images/logos/mongodb.jpg"),
+    name: "MongoDB"
+  },
+  Mongoose: {
+    img: require("../../assets/images/logos/mongoose.svg"),
+    name: "Mongoose"
+  },
+  MYSQL: {
+    img: require("../../assets/images/logos/mysql.svg"),
+    name: "SQL"
+  },
+  NextJS: {
+    img: require("../../assets/images/logos/nextjs.svg"),
+    name: "NextJS"
+  },
+  "Node.js": {
+    img: require("../../assets/images/logos/nodejs.svg"),
+    name: "Node.js"
+  },
+  NPM: {
+    img: require("../../assets/images/logos/npm.svg"),
+    name: "NPM"
+  },
+  PassportJS: {
+    img: require("../../assets/images/logos/passportjs.svg"),
+    name: "PassportJS"
+  },
+  Python: {
+    img: require("../../assets/images/logos/python.svg"),
+    name: "Python"
+  },
+  ReactJS: {
+    img: require("../../assets/images/logos/react.svg"),
+    name: "ReactJS"
+  },
+  Sequelize: {
+    img: require("../../assets/images/logos/sequelize.svg"),
+    name: "Sequelize"
+  },
+  "Styled-components": {
+    img: require("../../assets/images/logos/styled-components.png"),
+    name: "Styled-components"
+  },
+  TailwindCSS: {
+    img: require("../../assets/images/logos/tailwindcss.svg"),
+    name: "TailwindCSS"
+  },
+  Typescript: {
+    img: require("../../assets/images/logos/typescript.svg"),
+    name: "Typescript"
+  },
+  Wordpress: {
+    img: require("../../assets/images/logos/wordpress.svg"),
+    name: "Wordpress"
+  }
+}

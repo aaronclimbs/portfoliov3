@@ -21,7 +21,8 @@ import {
   StackContainer,
   StackWrapper,
   StackItem,
-  StackItemTitle,
+  StackImgWrapper,
+  StackItemTooltip,
   StackImg
 } from "./InfoElements";
 import { techIcons } from "./Data"
@@ -102,6 +103,17 @@ const InfoSection = ({
                     </ButtonExt>
                   )}
                 </BtnWrap>
+                <StackContainer>
+                  <StackWrapper>
+                      {stack.map((item, index) => {
+                        return(<StackItem key={index}>
+                      <StackImgWrapper>
+                        <StackItemTooltip primary={primary ? 1 : 0} darkText={darkText}>{techIcons[item].name}</StackItemTooltip>
+                        <StackImg title={techIcons[item].name} src={techIcons[item].img.default} alt={`${techIcons[item].name}-img`} />
+                      </StackImgWrapper>
+                    </StackItem>)})}
+                  </StackWrapper>
+                </StackContainer>
               </TextWrapper>
             </Column1>
             <Column2>
@@ -110,14 +122,6 @@ const InfoSection = ({
               </ImgWrap>
             </Column2>
           </InfoRow>
-          <StackContainer>
-            <StackWrapper>
-              {stack.map(item => (<StackItem>
-                <StackItemTitle primary={primary ? 1 : 0} darkText={darkText}>{techIcons[item].name}</StackItemTitle>
-                <StackImg src={techIcons[item].img.default} alt={`${techIcons[item].name}-img`} />
-              </StackItem>))}
-            </StackWrapper>
-          </StackContainer>
           <ScreenshotRow>
             {screenshots &&
               screenshots.map((screenshot, index) => (

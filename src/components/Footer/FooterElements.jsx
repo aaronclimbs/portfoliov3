@@ -73,3 +73,24 @@ export const FooterLink = styled(Link)`
 export const FooterLinkA = styled(Link)`
     padding: 5px
 `
+export const SocialMedia = styled.div`
+`
+
+export const SocialMediaWrap = styled.div`
+`;
+
+export const SocialLogo = styled(Link)`
+`;
+
+export const WebsiteRight = styled.p`
+`;
+
+export const SocialIcons = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const SocialIconLink = styled.a`
+    margin: 0 5px;
+`;
