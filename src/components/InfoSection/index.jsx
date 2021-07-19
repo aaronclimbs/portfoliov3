@@ -1,5 +1,6 @@
 import { Button, ButtonExt } from "../ButtonElement";
 import { useState } from "react";
+import { animateScroll as scroll } from 'react-scroll'
 import {
   InfoContainer,
   InfoWrapper,
@@ -48,9 +49,10 @@ const InfoSection = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleHover = () => setIsHovered(!isHovered);
+
   return (
     <>
-      <InfoContainer lightBg={lightBg}>
+      <InfoContainer id="projects" lightBg={lightBg}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -60,6 +62,7 @@ const InfoSection = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
+                    onClick={() => scroll.scrollToTop()}
                     to="home"
                     primary={primary ? 1 : 0}
                     smooth={true}

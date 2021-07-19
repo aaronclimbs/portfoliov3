@@ -49,11 +49,10 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #887135;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -136,18 +135,16 @@ export const StackContainer = styled.div`
 
 export const StackWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5px;
   justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  @media screen and (max-width: 420px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 `;
 
 export const StackItem = styled.div`
@@ -177,9 +174,9 @@ export const StackItemTooltip = styled.h3`
   bottom: -30px;
   
   text-transform: uppercase;
-  color: #01bf71;
+  color: #887135;
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? "#01bF71" : "#010606")};
+  background: ${({ primary }) => (primary ? "#887135" : "#010606")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "7px 24px" : "6px 15px")};
   color: ${({ dark }) => (dark ? "#010606" : "#fff")};
@@ -189,4 +186,8 @@ export const StackItemTooltip = styled.h3`
 export const StackImg = styled.img`
   height: 75px;
   width: 75px;
+
+  @media screen and (max-width: 420px) {
+    height: 50px;
+    width: 50px;
 `;
