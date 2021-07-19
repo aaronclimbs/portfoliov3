@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
+export const SkillsContainer = styled.div`
   padding-bottom: 100px;
   height: 100%;
   display: flex;
@@ -18,7 +18,7 @@ export const ServicesContainer = styled.div`
   }
 `;
 
-export const ServicesWrapper = styled.div`
+export const SkillsWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -37,7 +37,7 @@ export const ServicesWrapper = styled.div`
   }
 `;
 
-export const ServicesCard = styled.div`
+export const SkillsCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -55,13 +55,13 @@ export const ServicesCard = styled.div`
   }
 `;
 
-export const ServicesIcon = styled.img`
+export const SkillsIcon = styled.img`
   width: 160px;
   height: 160px;
   margin-bottom: 10px;
 `;
 
-export const ServicesH1 = styled.h1`
+export const SkillsH1 = styled.h1`
   margin: 64px 0;
   font-size: 2.5rem;
   color: #fff;
@@ -71,12 +71,12 @@ export const ServicesH1 = styled.h1`
   }
 `;
 
-export const ServicesH2 = styled.h2`
+export const SkillsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
 `;
 
-export const ServicesP = styled.p`
+export const SkillsP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;

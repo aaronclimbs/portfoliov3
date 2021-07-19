@@ -4,7 +4,7 @@ import InfoSection from "../components/InfoSection";
 import { homeObj } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import ServicesSection from "../components/ServicesSection";
+import SkillsSection from "../components/SkillsSection";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
       {homeObj.map((item, index) => (
         <InfoSection {...item} key={index} />
       ))}
-      <ServicesSection />
+      <SkillsSection />
       <Footer/>
     </>
   );
