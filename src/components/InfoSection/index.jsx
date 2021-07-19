@@ -18,7 +18,13 @@ import {
   ScreenshotWrap,
   ArrowMountain,
   ArrowUpwards,
+  StackContainer,
+  StackWrapper,
+  StackItem,
+  StackItemTitle,
+  StackImg
 } from "./InfoElements";
+import { techIcons } from "./Data"
 
 const InfoSection = ({
   primary,
@@ -37,6 +43,7 @@ const InfoSection = ({
   screenshots,
   liveLink,
   repoLink,
+  stack,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleHover = () => setIsHovered(!isHovered);
@@ -88,11 +95,6 @@ const InfoSection = ({
                     <ButtonExt
                       href={repoLink}
                       primary={primary ? 1 : 0}
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      offset={-80}
-                      exact="true"
                       dark={dark ? 1 : 0}
                       dark2={dark2 ? 1 : 0}
                     >
@@ -108,6 +110,14 @@ const InfoSection = ({
               </ImgWrap>
             </Column2>
           </InfoRow>
+          <StackContainer>
+            <StackWrapper>
+              {stack.map(item => (<StackItem>
+                <StackItemTitle primary={primary ? 1 : 0} darkText={darkText}>{techIcons[item].name}</StackItemTitle>
+                <StackImg src={techIcons[item].img.default} alt={`${techIcons[item].name}-img`} />
+              </StackItem>))}
+            </StackWrapper>
+          </StackContainer>
           <ScreenshotRow>
             {screenshots &&
               screenshots.map((screenshot, index) => (

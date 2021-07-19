@@ -21,6 +21,15 @@ export const homeObjOne = [
       require("../../assets/images/GreenpointFAQ.png"),
       require("../../assets/images/GreenpointHomepage.png"),
     ],
+    stack: [
+      "MongoDB",
+      "ReactJS",
+      "ES6",
+      "HTML5",
+      "CSS3",
+      "JWT",
+      "React-bootstrap",
+    ],
   },
   {
     id: "meiplaw",
@@ -40,7 +49,8 @@ export const homeObjOne = [
     darkText: false,
     repoLink: "",
     liveLink: "https://www.meiplaw.com",
-    // screenshots: [require("../../assets/images/MeiplawCover.png"), require("../../assets/images/MeiplawCases.png")]
+    // screenshots: [require("../../assets/images/MeiplawCover.png"), require("../../assets/images/MeiplawCases.png")],
+    stack: ["TailwindCSS, ReactJS, Wordpress, GraphQL, ES6"],
   },
   {
     id: "flexpace",
@@ -59,10 +69,21 @@ export const homeObjOne = [
     primary: true,
     darkText: false,
     repoLink: "https://github.com/aaronclimbs/flexspace",
-    liveLink: "https://gwbootcampflexspace.herokuapp.com/",
+    liveLink: "https://gwbootcampflexspace.heroku app.com/",
     screenshots: [
       require("../../assets/images/FlexspaceCover2.png"),
       require("../../assets/images/FlexspaceSignup.png"),
+    ],
+    stack: [
+      "Node.js",
+      "ES6",
+      "HTML5",
+      "CSS3",
+      "PassportJS",
+      "Express",
+      "SQL",
+      "Sequelize",
+      "EJS",
     ],
   },
   {
@@ -84,5 +105,85 @@ export const homeObjOne = [
     darkText: true,
     repoLink: "",
     liveLink: "https://herbalremedyrepository.com",
+    stack: ["NextJS", "ReactJS", "TailwindCSS"],
   },
 ];
+
+export const techIcons = {
+  NextJS: {
+    img: require("../../assets/images/logos/NextJS.png"),
+    name: "NextJS",
+  },
+  "Node.js": {
+    img: require("../../assets/images/logos/Node.png"),
+    name: "Node.js",
+  },
+  ES6: {
+    img: require("../../assets/images/logos/ES6.png"),
+    name: "ES6",
+  },
+  HTML5: {
+    img: require("../../assets/images/logos/HTML5.png"),
+    name: "HTML5",
+  },
+  CSS3: {
+    img: require("../../assets/images/logos/CSS3.png"),
+    name: "CSS3",
+  },
+  PassportJS: {
+    img: require("../../assets/images/logos/PassportJS.png"),
+    name: "PassportJS",
+  },
+  Express: {
+    img: require("../../assets/images/logos/Express.png"),
+    name: "Express",
+  },
+  SQL: {
+    img: require("../../assets/images/logos/SQL.png"),
+    name: "SQL",
+  },
+  Sequelize: {
+    img: require("../../assets/images/logos/Sequelize.png"),
+    name: "Sequelize",
+  },
+  EJS: {
+    img: require("../../assets/images/logos/EJS.png"),
+    name: "EJS",
+  },
+  TailwindCSS: {
+    img: require("../../assets/images/logos/TailwindCSS.png"),
+    name: "TailwindCSS",
+  },
+  "Styled-components": {
+    img: require("../../assets/images/logos/Styled.png"),
+    name: "Styled-components",
+  },
+  GraphQL: {
+    img: require("../../assets/images/logos/GraphQL.png"),
+    name: "GraphQL",
+  },
+  MongoDB: {
+    img: require("../../assets/images/logos/MongoDB.png"),
+    name: "MongoDB",
+  },
+  Mongoose: {
+    img: require("../../assets/images/logos/Mongoose.png"),
+    name: "Mongoose",
+  },
+  Wordpress: {
+    img: require("../../assets/images/logos/Wordpress.png"),
+    name: "Wordpress",
+  },
+  ReactJS: {
+    img: require("../../assets/images/logos/ReactJS.png"),
+    name: "ReactJS",
+  },
+  JWT: {
+    img: require("../../assets/images/logos/JWT.png"),
+    name: "JSONWebTokens",
+  },
+  Bootstrap: {
+    img: require("../../assets/images/logos/Bootstrap.png"),
+    name: "Bootstrap",
+  },
+};

@@ -129,3 +129,54 @@ export const ArrowUpwards = styled(MdKeyboardArrowUp)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+export const StackContainer = styled.div`
+  padding: 5px;
+`;
+
+export const StackWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 420px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const StackItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-height: 150px;
+  max-width: 100px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+  }
+`;
+
+export const StackItemTitle = styled.h3`
+  text-transform: uppercase;
+  color: #01bf71;
+  border-radius: 50px;
+  background: ${({ primary }) => (primary ? "#01bF71" : "#010606")};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  font-size: ${({ big }) => (big ? "18px" : "14px")};
+`;
+
+export const StackImg = styled.img`
+  width: 100%;
+`;
