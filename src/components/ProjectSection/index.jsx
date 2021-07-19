@@ -2,9 +2,9 @@ import { Button, ButtonExt } from "../ButtonElement";
 import { useState } from "react";
 import { animateScroll as scroll } from 'react-scroll'
 import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
+  ProjectContainer,
+  ProjectWrapper,
+  ProjectRow,
   Column1,
   Column2,
   TextWrapper,
@@ -25,10 +25,10 @@ import {
   StackImgWrapper,
   StackItemTooltip,
   StackImg
-} from "./InfoElements";
+} from "./ProjectElements";
 import { techIcons } from "./Data"
 
-const InfoSection = ({
+const ProjectSection = ({
   primary,
   lightBg,
   imgStart,
@@ -52,9 +52,9 @@ const InfoSection = ({
 
   return (
     <>
-      <InfoContainer id="projects" lightBg={lightBg}>
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+      <ProjectContainer id="projects" lightBg={lightBg}>
+        <ProjectWrapper>
+          <ProjectRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
                 <TopLine>{topline}</TopLine>
@@ -124,7 +124,7 @@ const InfoSection = ({
                 <Img src={img.default} alt={alt} />
               </ImgWrap>
             </Column2>
-          </InfoRow>
+          </ProjectRow>
           <ScreenshotRow>
             {screenshots &&
               screenshots.map((screenshot, index) => (
@@ -133,10 +133,10 @@ const InfoSection = ({
                 </ScreenshotWrap>
               ))}
           </ScreenshotRow>
-        </InfoWrapper>
-      </InfoContainer>
+        </ProjectWrapper>
+      </ProjectContainer>
     </>
   );
 };
 
-export default InfoSection;
+export default ProjectSection;

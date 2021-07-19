@@ -218,3 +218,41 @@ export const techIcons = {
     name: "Wordpress"
   }
 }
+
+export const skills = [
+  {
+    name: "API Development",
+    icon: require("../../assets/images/svg-5.svg"),
+    description: "Properly implement routes using a REST or GraphQL approach.",
+  },
+  {
+    name: "Web Scraping",
+    icon: require("../../assets/images/svg-6.svg"),
+    description: "Automate the gathering and cleaning of data from various sources.",
+  },
+  {
+    name: "Frontend Frameworks",
+    icon: require("../../assets/images/svg-7.svg"),
+    description: "Use ESNext practices alongside React or Vue to build out responsive apps.",
+  },
+  {
+    name: "Tests",
+    icon: require("../../assets/images/svg-8.svg"),
+    description: "Utilize React Testing Library and Jest to effectively test web apps.",
+  },
+  {
+    name: "Version Control",
+    icon: require("../../assets/images/svg-9.svg"),
+    description: "Use Git best-practices to maintain a legible history.",
+  },
+  {
+    name: "Databases",
+    icon: require("../../assets/images/svg-10.svg"),
+    description: "Properly persist and query data within applications.",
+  },
+  {
+    name: "Design",
+    icon: require("../../assets/images/svg-11.svg"),
+    description: "Build out a responsive, accessible, consistent design across a site or app.",
+  },
+]

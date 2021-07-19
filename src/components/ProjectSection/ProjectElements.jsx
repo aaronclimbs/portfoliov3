@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MdKeyboardArrowUp, MdLandscape } from "react-icons/md";
 
-export const InfoContainer = styled.div`
+export const ProjectContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
@@ -10,7 +10,7 @@ export const InfoContainer = styled.div`
   }
 `;
 
-export const InfoWrapper = styled.div`
+export const ProjectWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 100%;
@@ -22,7 +22,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
-export const InfoRow = styled.div`
+export const ProjectRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -101,7 +101,7 @@ export const ScreenshotWrap = styled(ImgWrap)`
   height: 100%;
 `;
 
-export const ScreenshotRow = styled(InfoRow)`
+export const ScreenshotRow = styled(ProjectRow)`
   display: flex;
   justify-content: center;
   align-items: center;

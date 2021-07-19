@@ -1,7 +1,7 @@
 import { useState } from "react";
 import HeroSection from "../components/HeroSection";
-import InfoSection from "../components/InfoSection";
-import { homeObj } from "../components/InfoSection/Data";
+import ProjectSection from "../components/ProjectSection";
+import { homeObj } from "../components/ProjectSection/Data";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import SkillsSection from "../components/SkillsSection";
@@ -22,7 +22,7 @@ const Home = () => {
       <Navbar toggleSidebar={toggleSidebar} data-testid="navbar" />
       <HeroSection />
       {homeObj.map((item, index) => (
-        <InfoSection {...item} key={index} />
+        <ProjectSection {...item} key={index} />
       ))}
       <SkillsSection />
       <Footer/>
