@@ -37,28 +37,42 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
               to="about"
               data-testid="sidebar-link"
               onClick={toggleSidebar}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
             >
               About
             </SidebarLink>
-            <SidebarLink to="projects" onClick={toggleSidebar}>
+            <SidebarLink to="skills" onClick={toggleSidebar}
+
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+            >
+              Skills
+            </SidebarLink>
+            <SidebarLink to="projects" onClick={toggleSidebar}
+            
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+            >
               Projects
-            </SidebarLink>
-            <SidebarLink to="contact" onClick={toggleSidebar}>
-              Contacts
-            </SidebarLink>
-            <SidebarLink to="signup" onClick={toggleSidebar}>
-              Signup
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            {/* <SidebarRoute to="/signin" onClick={toggleSidebar}>
-              Sign in
-            </SidebarRoute> */}
             <SidebarSocialLink
               href="https://www.github.com/aaronclimbs"
               data-testid="sidebar-route"
               onMouseEnter={handleGithubHover}
               onMouseLeave={handleGithubHover}
+              rel="noopener noreferrer"
             >
               <FaGithub color={isGithubHovered ? "black" : "white"} size={30} />
             </SidebarSocialLink>
@@ -67,6 +81,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
               onMouseLeave={handleLinkedInHover}
               href="https://www.linkedin.com/in/akeisler"
               data-testid="nav-route"
+              rel="noopener noreferrer"
             >
               <FaLinkedin
                 color={isLinkedInHovered ? "black" : "white"}

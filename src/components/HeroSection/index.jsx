@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Video from "../../assets/videos/dots.mp4";
-import Typewriter from 'typewriter-effect'
+import Typewriter from "typewriter-effect";
 import {
   HeroBg,
   HeroBtnWrapper,
@@ -12,7 +12,7 @@ import {
   ArrowForward,
   ArrowRight,
   TypewriterWrapper,
-  HeroPPadded
+  HeroPPadded,
 } from "./HeroElements";
 import { Button } from "../ButtonElement";
 
@@ -33,6 +33,7 @@ const HeroSection = () => {
           src={Video}
           type="video/mp4"
           data-testid="hero-bg-video"
+          alt="Dots"
         />
       </HeroBg>
       <HeroContent>

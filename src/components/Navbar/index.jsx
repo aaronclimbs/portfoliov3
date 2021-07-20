@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -25,27 +26,71 @@ const Navbar = ({ toggleSidebar }) => {
     setLinkedInHovered(!isLinkedInHovered);
   };
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer data-testid="nav-container">
-          <NavLogo to="/" data-testid="nav-logo">
-            Me
+          <NavLogo onClick={toggleHome} to="/" data-testid="nav-logo">
+            Aaron Keisler
           </NavLogo>
           <MobileIcon data-testid="nav-mobile-icon">
             <FaBars color="#fff" onClick={toggleSidebar} />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLink to="about" data-testid="nav-link">
+              <NavLink
+                to="about"
+                data-testid="nav-link"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
                 about
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="projects">projects</NavLink>
+              <NavLink
+                to="skills"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                skills
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="contact">contact</NavLink>
+              <NavLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                projects
+              </NavLink>
             </NavItem>
           </NavMenu>
           <NavBtn>
@@ -55,6 +100,7 @@ const Navbar = ({ toggleSidebar }) => {
               onMouseLeave={handleGithubHover}
               href="https://www.github.com/aaronclimbs"
               data-testid="nav-route"
+                rel="noopener noreferrer"
             >
               <FaGithub color={isGithubHovered ? "black" : "white"} size={30} />
             </NavSocialLink>
@@ -63,6 +109,7 @@ const Navbar = ({ toggleSidebar }) => {
               onMouseLeave={handleLinkedInHover}
               href="https://www.linkedin.com/in/akeisler"
               data-testid="nav-route"
+                rel="noopener noreferrer"
             >
               <FaLinkedin
                 color={isLinkedInHovered ? "black" : "white"}
