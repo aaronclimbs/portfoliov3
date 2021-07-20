@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
+  min-height: 100vh;
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 

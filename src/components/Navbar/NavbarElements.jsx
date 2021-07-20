@@ -54,7 +54,7 @@ export const MobileIcon = styled.div`
   }
 `;
 
-export const NavMenu = styled.ul`
+export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   list-style: none;
