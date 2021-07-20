@@ -33,6 +33,7 @@ const HeroSection = () => {
           src={Video}
           type="video/mp4"
           data-testid="hero-bg-video"
+          alt="Dots"
         />
       </HeroBg>
       <HeroContent>

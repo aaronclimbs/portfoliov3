@@ -11,18 +11,18 @@ import {
   SkillsP,
 } from "./SkillsElements";
 
-  const Skills = () => {
+const Skills = () => {
   return (
-    <SkillsContainer id="skills">
+    <SkillsContainer id="skills" data-testid="skills-container">
       <SkillsH1>Skills</SkillsH1>
       <SkillsWrapper>
-        {skills.map((skill, i) => 
-          (<SkillsCard key={i}>
-            <SkillsIcon src={skill.icon.default} />
+        {skills.map((skill, i) => (
+          <SkillsCard data-testid={`skills-card-${i}`} key={i}>
+            <SkillsIcon src={skill.icon.default} alt={skill.alt}/>
             <SkillsH2>{skill.name}</SkillsH2>
             <SkillsP>{skill.description}</SkillsP>
-          </SkillsCard>))
-        }
+          </SkillsCard>
+        ))}
       </SkillsWrapper>
     </SkillsContainer>
   );

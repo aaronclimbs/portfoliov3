@@ -89,7 +89,6 @@ export const BtnWrap = styled.div`
 
 export const ImgWrap = styled.div`
   max-width: 555px;
-  height: 100%;
 `;
 export const Img = styled.img`
   width: 100%;
@@ -99,6 +98,12 @@ export const Img = styled.img`
 
 export const ScreenshotWrap = styled(ImgWrap)`
   height: 100%;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.3);
+    transition: all 0.3s;
+  }
 `;
 
 export const ScreenshotRow = styled(ProjectRow)`
@@ -141,14 +146,13 @@ export const StackWrapper = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    padding: 10px 
+    padding: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
-
 `;
 
 export const StackItem = styled.div`
-  padding: 5px
+  padding: 5px;
 `;
 
 export const StackImgWrapper = styled.div`
@@ -172,7 +176,7 @@ export const StackItemTooltip = styled.h3`
   position: absolute;
   visibility: hidden;
   bottom: -30px;
-  
+
   text-transform: uppercase;
   color: #887135;
   border-radius: 50px;
@@ -187,7 +191,8 @@ export const StackImg = styled.img`
   height: 75px;
   width: 75px;
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 480px) {
     height: 50px;
     width: 50px;
+  }
 `;

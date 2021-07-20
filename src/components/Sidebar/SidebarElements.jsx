@@ -43,7 +43,7 @@ export const SidebarMenu = styled.ul`
   transition: 0.3s ease-in-out;
   text-align: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     transition: 0.3s ease-in-out;
     grid-template-rows: repeat(6, 60px);
   }

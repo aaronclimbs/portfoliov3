@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import SkillsSection from "../components/SkillsSection";
 import Footer from "../components/Footer";
+import AboutSection from "../components/AboutSection";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -21,11 +22,12 @@ const Home = () => {
       />
       <Navbar toggleSidebar={toggleSidebar} data-testid="navbar" />
       <HeroSection />
+      <AboutSection />
+      <SkillsSection />
       {homeObj.map((item, index) => (
         <ProjectSection {...item} key={index} />
       ))}
-      <SkillsSection />
-      <Footer/>
+      <Footer />
     </>
   );
 };

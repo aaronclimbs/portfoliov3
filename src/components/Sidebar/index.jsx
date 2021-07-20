@@ -59,6 +59,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
               data-testid="sidebar-route"
               onMouseEnter={handleGithubHover}
               onMouseLeave={handleGithubHover}
+              rel="noopener noreferrer"
             >
               <FaGithub color={isGithubHovered ? "black" : "white"} size={30} />
             </SidebarSocialLink>
@@ -67,6 +68,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
               onMouseLeave={handleLinkedInHover}
               href="https://www.linkedin.com/in/akeisler"
               data-testid="nav-route"
+              rel="noopener noreferrer"
             >
               <FaLinkedin
                 color={isLinkedInHovered ? "black" : "white"}

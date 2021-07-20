@@ -10,7 +10,7 @@ export const homeObj = [
     buttonLabel: "Get started now!",
     imgStart: false,
     img: require("../../assets/images/svg-1.svg"),
-    alt: "Car",
+    alt: "growing",
     dark: true,
     dark2: false,
     primary: true,
@@ -42,7 +42,7 @@ export const homeObj = [
     buttonLabel: "Defend your IP.",
     imgStart: true,
     img: require("../../assets/images/svg-2.svg"),
-    alt: "Car",
+    alt: "office",
     dark: false,
     dark2: false,
     primary: false,
@@ -63,7 +63,7 @@ export const homeObj = [
     buttonLabel: "Rent your rooms now.",
     imgStart: false,
     img: require("../../assets/images/svg-3.svg"),
-    alt: "Car",
+    alt: "reservations",
     dark: true,
     dark2: false,
     primary: true,
@@ -97,7 +97,7 @@ export const homeObj = [
     buttonLabel: "Learn more",
     imgStart: true,
     img: require("../../assets/images/svg-4.svg"),
-    alt: "Car",
+    alt: "herbs",
     dark: false,
     dark2: false,
     primary: false,
@@ -111,148 +111,159 @@ export const homeObj = [
 export const techIcons = {
   Bash: {
     img: require("../../assets/images/logos/bash.svg"),
-    name: "Bash"
+    name: "Bash",
   },
   Bootstrap: {
     img: require("../../assets/images/logos/bootstrap.svg"),
-    name: "Bootstrap"
+    name: "Bootstrap",
   },
   CSS3: {
     img: require("../../assets/images/logos/css3.svg"),
-    name: "CSS3"
+    name: "CSS3",
   },
   Express: {
     img: require("../../assets/images/logos/express.jpg"),
-    name: "Express"
+    name: "Express",
   },
   Firebase: {
     img: require("../../assets/images/logos/firebase.svg"),
-    name: "Firebase"
+    name: "Firebase",
   },
   Gatsby: {
     img: require("../../assets/images/logos/gatsby.svg"),
-    name: "Gatsby"
+    name: "Gatsby",
   },
   Git: {
     img: require("../../assets/images/logos/git.svg"),
-    name: "Git"
+    name: "Git",
   },
   GraphQL: {
     img: require("../../assets/images/logos/graphql.svg"),
-    name: "GraphQL"
+    name: "GraphQL",
   },
   Heroku: {
     img: require("../../assets/images/logos/heroku.svg"),
-    name: "Heroku"
+    name: "Heroku",
   },
   HTML5: {
     img: require("../../assets/images/logos/html5.svg"),
-    name: "HTML5"
+    name: "HTML5",
   },
   Javascript: {
     img: require("../../assets/images/logos/javascript.svg"),
-    name: "Javascript"
+    name: "Javascript",
   },
   JWT: {
     img: require("../../assets/images/logos/jwt.svg"),
-    name: "JSONWebTokens"
+    name: "JSONWebTokens",
   },
   Linux: {
     img: require("../../assets/images/logos/linux.svg"),
-    name: "Linux"
+    name: "Linux",
   },
   MongoDB: {
     img: require("../../assets/images/logos/mongodb.jpg"),
-    name: "MongoDB"
+    name: "MongoDB",
   },
   Mongoose: {
     img: require("../../assets/images/logos/mongoose.svg"),
-    name: "Mongoose"
+    name: "Mongoose",
   },
   MYSQL: {
     img: require("../../assets/images/logos/mysql.svg"),
-    name: "SQL"
+    name: "SQL",
   },
   NextJS: {
     img: require("../../assets/images/logos/nextjs.svg"),
-    name: "NextJS"
+    name: "NextJS",
   },
   "Node.js": {
     img: require("../../assets/images/logos/nodejs.svg"),
-    name: "Node.js"
+    name: "Node.js",
   },
   NPM: {
     img: require("../../assets/images/logos/npm.svg"),
-    name: "NPM"
+    name: "NPM",
   },
   PassportJS: {
     img: require("../../assets/images/logos/passportjs.svg"),
-    name: "PassportJS"
+    name: "PassportJS",
   },
   Python: {
     img: require("../../assets/images/logos/python.svg"),
-    name: "Python"
+    name: "Python",
   },
   ReactJS: {
     img: require("../../assets/images/logos/react.svg"),
-    name: "ReactJS"
+    name: "ReactJS",
   },
   Sequelize: {
     img: require("../../assets/images/logos/sequelize.svg"),
-    name: "Sequelize"
+    name: "Sequelize",
   },
   "Styled-components": {
     img: require("../../assets/images/logos/styled-components.png"),
-    name: "Styled-components"
+    name: "Styled-components",
   },
   TailwindCSS: {
     img: require("../../assets/images/logos/tailwindcss.svg"),
-    name: "TailwindCSS"
+    name: "TailwindCSS",
   },
   Typescript: {
     img: require("../../assets/images/logos/typescript.svg"),
-    name: "Typescript"
+    name: "Typescript",
   },
   Wordpress: {
     img: require("../../assets/images/logos/wordpress.svg"),
-    name: "Wordpress"
-  }
-}
+    name: "Wordpress",
+  },
+};
 
 export const skills = [
   {
     name: "API Development",
     icon: require("../../assets/images/svg-5.svg"),
     description: "Properly implement routes using a REST or GraphQL approach.",
+    alt: "api",
   },
   {
     name: "Web Scraping",
     icon: require("../../assets/images/svg-6.svg"),
-    description: "Automate the gathering and cleaning of data from various sources.",
+    description:
+      "Automate the gathering and cleaning of data from various sources.",
+      alt: "web-scraping",
   },
   {
     name: "Frontend Frameworks",
     icon: require("../../assets/images/svg-7.svg"),
-    description: "Use ESNext practices alongside React or Vue to build out responsive apps.",
+    description:
+      "Use ESNext practices alongside React or Vue to build out responsive apps.",
+      alt: "frontend-frameworks",
   },
   {
     name: "Tests",
     icon: require("../../assets/images/svg-8.svg"),
-    description: "Utilize React Testing Library and Jest to effectively test web apps.",
+    description:
+      "Utilize React Testing Library and Jest to effectively test web apps.",
+      alt: "tests",
   },
   {
     name: "Version Control",
     icon: require("../../assets/images/svg-9.svg"),
     description: "Use Git best-practices to maintain a legible history.",
+    alt: "version-control",
   },
   {
     name: "Databases",
     icon: require("../../assets/images/svg-10.svg"),
     description: "Properly persist and query data within applications.",
+    alt: "databases",
   },
   {
     name: "Design",
     icon: require("../../assets/images/svg-11.svg"),
-    description: "Build out a responsive, accessible, consistent design across a site or app.",
+    description:
+      "Build out a responsive, accessible, consistent design across a site or app.",
+      alt: "design"
   },
-]
+];

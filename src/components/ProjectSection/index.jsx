@@ -1,6 +1,6 @@
 import { Button, ButtonExt } from "../ButtonElement";
 import { useState } from "react";
-import { animateScroll as scroll } from 'react-scroll'
+import { animateScroll as scroll } from "react-scroll";
 import {
   ProjectContainer,
   ProjectWrapper,
@@ -24,9 +24,9 @@ import {
   StackItem,
   StackImgWrapper,
   StackItemTooltip,
-  StackImg
+  StackImg,
 } from "./ProjectElements";
-import { techIcons } from "./Data"
+import { techIcons } from "./Data";
 
 const ProjectSection = ({
   primary,
@@ -84,13 +84,9 @@ const ProjectSection = ({
                     <ButtonExt
                       href={liveLink}
                       primary={primary ? 1 : 0}
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      offset={-80}
-                      exact="true"
                       dark={dark ? 1 : 0}
                       dark2={dark2 ? 1 : 0}
+                rel="noopener noreferrer"
                     >
                       Live
                     </ButtonExt>
@@ -101,6 +97,7 @@ const ProjectSection = ({
                       primary={primary ? 1 : 0}
                       dark={dark ? 1 : 0}
                       dark2={dark2 ? 1 : 0}
+                rel="noopener noreferrer"
                     >
                       Repo
                     </ButtonExt>
@@ -108,13 +105,25 @@ const ProjectSection = ({
                 </BtnWrap>
                 <StackContainer>
                   <StackWrapper>
-                      {stack.map((item, index) => {
-                        return(<StackItem key={index}>
-                      <StackImgWrapper>
-                        <StackItemTooltip primary={primary ? 1 : 0} darkText={darkText}>{techIcons[item].name}</StackItemTooltip>
-                        <StackImg title={techIcons[item].name} src={techIcons[item].img.default} alt={`${techIcons[item].name}-img`} />
-                      </StackImgWrapper>
-                    </StackItem>)})}
+                    {stack.map((item, index) => {
+                      return (
+                        <StackItem key={index}>
+                          <StackImgWrapper>
+                            <StackItemTooltip
+                              primary={primary ? 1 : 0}
+                              darkText={darkText}
+                            >
+                              {techIcons[item].name}
+                            </StackItemTooltip>
+                            <StackImg
+                              title={techIcons[item].name}
+                              src={techIcons[item].img.default}
+                              alt={`${techIcons[item].name}-img`}
+                            />
+                          </StackImgWrapper>
+                        </StackItem>
+                      );
+                    })}
                   </StackWrapper>
                 </StackContainer>
               </TextWrapper>
@@ -129,7 +138,7 @@ const ProjectSection = ({
             {screenshots &&
               screenshots.map((screenshot, index) => (
                 <ScreenshotWrap key={index}>
-                  <Screenshot src={screenshot.default} alt="" />
+                  <Screenshot src={screenshot.default} alt={`${headline}-screenshot-${index + 1}`} />
                 </ScreenshotWrap>
               ))}
           </ScreenshotRow>
