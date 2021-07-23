@@ -1,18 +1,11 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { animateScroll as scroll } from "react-scroll";
 
 import {
   FooterContainer,
-  // FooterLinksContainer,
   FooterWrap,
-  // FooterLinksWrapper,
-  // FooterLinkItems,
-  // FooterLinkTitle,
-  // FooterLink,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
   SocialIcons,
   SocialIconLink,
   WebsiteRights,
@@ -24,11 +17,8 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={() => scroll.scrollToTop()}>
-              Go to top
-            </SocialLogo>
             <WebsiteRights>
-              (c) Aaron Keisler {new Date().getFullYear()} All Rights Reserved
+            © Aaron Keisler {new Date().getFullYear()} All Rights Reserved
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink

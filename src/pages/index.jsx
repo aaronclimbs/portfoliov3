@@ -7,6 +7,7 @@ import Sidebar from "../components/Sidebar";
 import SkillsSection from "../components/SkillsSection";
 import Footer from "../components/Footer";
 import AboutSection from "../components/AboutSection";
+import GoToTop from "../components/GoToTop"
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -15,6 +16,7 @@ const Home = () => {
 
   return (
     <>
+      <GoToTop/>
       <Sidebar
         toggleSidebar={toggleSidebar}
         isOpen={isSidebarOpen}
@@ -24,9 +26,11 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      {homeObj.map((item, index) => (
-        <ProjectSection {...item} key={index} />
-      ))}
+      <div id="projects">
+        {homeObj.map((item, index) => (
+          <ProjectSection {...item} key={index} />
+        ))}
+      </div>
       <Footer />
     </>
   );

@@ -53,7 +53,7 @@ const ProjectSection = ({
 
   return (
     <>
-      <ProjectContainer id="projects" lightBg={lightBg}>
+      <ProjectContainer lightBg={lightBg}>
         <ProjectWrapper>
           <ProjectRow imgStart={imgStart}>
             <Column1>

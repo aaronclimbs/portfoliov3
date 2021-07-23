@@ -4,8 +4,6 @@ import {
   TextWrapper,
   Heading,
   Subtitle,
-  ImgWrap,
-  Img,
 } from "./AboutElements";
 
 const AboutSection = () => {

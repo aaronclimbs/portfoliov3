@@ -1,17 +1,13 @@
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useState } from "react";
+import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import {
-  Nav,
-  NavbarContainer,
-  NavLogo,
-  NavMenu,
-  NavItem,
-  NavLink,
-  MobileIcon,
-  NavBtn,
-  NavSocialLink,
+  MobileIcon, Nav,
+  NavbarContainer, NavBtn, NavItem,
+  NavLink, NavLogo,
+  NavMenu, NavSocialLink
 } from "./NavbarElements";
-import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
+import {useScroll} from "../../Hooks/useScroll"
 
 const Navbar = ({ toggleSidebar }) => {
   const [isGithubHovered, setGithubHovered] = useState(false);
@@ -29,19 +25,7 @@ const Navbar = ({ toggleSidebar }) => {
     scroll.scrollToTop();
   };
 
-  const [scrollNav, setScrollNav] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+  const scrollNav = useScroll();
 
   return (
     <>
