@@ -1,6 +1,4 @@
-import { Button, ButtonExt } from "../ButtonElement";
-import { useState } from "react";
-import { animateScroll as scroll } from "react-scroll";
+import { ButtonExt } from "../ButtonElement";
 import {
   ProjectContainer,
   ProjectWrapper,
@@ -17,8 +15,6 @@ import {
   Screenshot,
   ScreenshotRow,
   ScreenshotWrap,
-  ArrowMountain,
-  ArrowUpwards,
   StackContainer,
   StackWrapper,
   StackItem,
@@ -48,8 +44,6 @@ const ProjectSection = ({
   stack,
   darker
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const handleHover = () => setIsHovered(!isHovered);
 
   return (
     <>
@@ -61,25 +55,6 @@ const ProjectSection = ({
                 <TopLine darker={darker}>{topline}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button
-                    onClick={() => scroll.scrollToTop()}
-                    to="home"
-                    primary={primary ? 1 : 0}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={-80}
-                    exact="true"
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    onMouseEnter={handleHover}
-                    onMouseLeave={handleHover}
-                  >
-                    Scroll back up{" "}
-                    {isHovered ? <ArrowMountain /> : <ArrowUpwards />}
-                  </Button>
-                </BtnWrap>
                 <BtnWrap>
                   {liveLink && (
                     <ButtonExt

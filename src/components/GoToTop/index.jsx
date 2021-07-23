@@ -1,5 +1,5 @@
 import { animateScroll as scroll } from "react-scroll";
-import { FaChevronUp } from "react-icons/fa";
+import { MdLandscape } from "react-icons/md"
 import { GoToButton, GoToContainer } from "./GoToElements";
 import { useScroll } from "../../Hooks/useScroll";
 
@@ -13,7 +13,7 @@ const GoToTop = () => {
   return (
     <GoToContainer scrollNav={scrollNav}>
       <GoToButton scrollNav={scrollNav}>
-        <FaChevronUp onClick={handleClick} size={30} />
+        <MdLandscape onClick={handleClick} size={30} />
       </GoToButton>
     </GoToContainer>
   );
