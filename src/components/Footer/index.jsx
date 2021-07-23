@@ -4,12 +4,12 @@ import { animateScroll as scroll } from "react-scroll";
 
 import {
   FooterContainer,
-  FooterLinksContainer,
+  // FooterLinksContainer,
   FooterWrap,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
+  // FooterLinksWrapper,
+  // FooterLinkItems,
+  // FooterLinkTitle,
+  // FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -22,44 +22,6 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">How it Works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">How it Works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">How it Works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">How it Works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={() => scroll.scrollToTop()}>
