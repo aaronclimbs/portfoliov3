@@ -14,7 +14,7 @@ import {
   TypewriterWrapper,
   HeroPPadded,
 } from "./HeroElements";
-import { Button } from "../ButtonElement";
+import { ButtonExt } from "../ButtonElement";
 
 const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -47,7 +47,7 @@ const HeroSection = () => {
               strings: [
                 "a <strong>developer</strong>.",
                 "a <strong>climber</strong>.",
-                "a <strong>engineer</strong>.",
+                "an <strong>engineer</strong>.",
                 "a legal <strong>technologist</strong>.",
                 "a <strong>designer</strong>.",
                 "a constant <strong>learner</strong>.",
@@ -56,18 +56,20 @@ const HeroSection = () => {
             }}
           />
         </TypewriterWrapper>
-        <HeroP>Please take a look at look at my current/past projects.</HeroP>
+        <HeroP>
+          Please scroll for a look at look at my current/past projects.
+        </HeroP>
         <HeroBtnWrapper>
-          <Button
+          <ButtonExt
+            href="mailto:aaron@keisler.dev"
             data-testid="hero-signup-button"
-            to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
           >
-            Get in touch! {isHovered ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+            Send me a message. {isHovered ? <ArrowForward /> : <ArrowRight />}
+          </ButtonExt>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
