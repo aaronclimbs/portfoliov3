@@ -52,6 +52,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
+  margin: 8rem 0;
   color: #fff;
   font-size: 48px;
   text-align: center;
@@ -65,10 +66,10 @@ export const HeroH1 = styled.h1`
   }
 `;
 export const HeroP = styled.p`
-  margin-top: 24px;
+  margin-top: 2rem;
   color: #fff;
   font-size: 24px;
-  text-align: center;
+  /* text-align: center; */
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
@@ -85,6 +86,7 @@ export const HeroPPadded = styled(HeroP)`
 `;
 
 export const TypewriterWrapper = styled.div`
+  margin: 5rem 0;
   display: flex;
   align-items: baseline;
 

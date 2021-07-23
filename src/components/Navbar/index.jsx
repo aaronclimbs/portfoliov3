@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
@@ -9,7 +9,6 @@ import {
   NavLink,
   MobileIcon,
   NavBtn,
-  // NavBtnLink,
   NavSocialLink,
 } from "./NavbarElements";
 import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -18,13 +17,13 @@ const Navbar = ({ toggleSidebar }) => {
   const [isGithubHovered, setGithubHovered] = useState(false);
   const [isLinkedInHovered, setLinkedInHovered] = useState(false);
 
-  const handleGithubHover = () => {
+  const handleGithubHover = useCallback(() => {
     setGithubHovered(!isGithubHovered);
-  };
+  }, [isGithubHovered]);
 
-  const handleLinkedInHover = () => {
+  const handleLinkedInHover = useCallback(() => {
     setLinkedInHovered(!isLinkedInHovered);
-  };
+  }, [isLinkedInHovered]);
 
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -94,7 +93,6 @@ const Navbar = ({ toggleSidebar }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            {/* <NavBtnLink to="/signin" data-testid="nav-btn-link">Sign in</NavBtnLink> */}
             <NavSocialLink
               onMouseEnter={handleGithubHover}
               onMouseLeave={handleGithubHover}

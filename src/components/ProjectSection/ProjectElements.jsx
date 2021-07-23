@@ -144,6 +144,7 @@ export const StackWrapper = styled.div`
   gap: 5px;
   justify-content: center;
   align-items: center;
+  margin-left: -30px;
 
   @media screen and (max-width: 768px) {
     padding: 10px;

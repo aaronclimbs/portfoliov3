@@ -15,6 +15,7 @@ export const homeObj = [
     dark2: false,
     primary: true,
     darkText: false,
+    darker: false,
     repoLink: "https://github.com/aaronclimbs/greenpoint",
     liveLink: "https://glacial-peak-greenpoint.herokuapp.com/",
     screenshots: [
@@ -47,6 +48,7 @@ export const homeObj = [
     dark2: false,
     primary: false,
     darkText: true,
+    darker: true,
     repoLink: "",
     liveLink: "https://www.meiplaw.com",
     // screenshots: [require("../../assets/images/MeiplawCover.png"), require("../../assets/images/MeiplawCases.png")],
@@ -68,6 +70,7 @@ export const homeObj = [
     dark2: false,
     primary: true,
     darkText: false,
+    darker: false,
     repoLink: "https://github.com/aaronclimbs/flexspace",
     liveLink: "https://gwbootcampflexspace.heroku app.com/",
     screenshots: [
@@ -102,6 +105,7 @@ export const homeObj = [
     dark2: false,
     primary: false,
     darkText: true,
+    darker: true,
     repoLink: "",
     liveLink: "https://herbalremedyrepository.com",
     stack: ["Javascript", "NextJS", "ReactJS", "TailwindCSS"],

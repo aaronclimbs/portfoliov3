@@ -46,6 +46,7 @@ const ProjectSection = ({
   liveLink,
   repoLink,
   stack,
+  darker
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const handleHover = () => setIsHovered(!isHovered);
@@ -57,7 +58,7 @@ const ProjectSection = ({
           <ProjectRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>{topline}</TopLine>
+                <TopLine darker={darker}>{topline}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
@@ -112,6 +113,7 @@ const ProjectSection = ({
                             <StackItemTooltip
                               primary={primary ? 1 : 0}
                               darkText={darkText}
+                              dark={dark}
                             >
                               {techIcons[item].name}
                             </StackItemTooltip>

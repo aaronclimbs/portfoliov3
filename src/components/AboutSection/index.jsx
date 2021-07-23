@@ -45,9 +45,6 @@ const AboutSection = () => {
             learning new technologies and have spent quite some time this year
             gaining experience with Linux and various DevOps-related workflows.
           </Subtitle>
-          <ImgWrap>
-            <Img />
-          </ImgWrap>
         </TextWrapper>
       </AboutWrapper>
     </AboutContainer>
