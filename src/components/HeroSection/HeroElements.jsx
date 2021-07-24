@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -44,15 +45,15 @@ export const VideoBg = styled.video`
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
-  position: absolute;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 70vh;
 `;
 
 export const HeroH1 = styled.h1`
-  margin: 8rem 0;
   color: #fff;
   font-size: 48px;
   text-align: center;
@@ -66,10 +67,8 @@ export const HeroH1 = styled.h1`
   }
 `;
 export const HeroP = styled.p`
-  margin-top: 2rem;
   color: #fff;
   font-size: 24px;
-  /* text-align: center; */
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
@@ -86,7 +85,6 @@ export const HeroPPadded = styled(HeroP)`
 `;
 
 export const TypewriterWrapper = styled.div`
-  margin: 5rem 0;
   display: flex;
   align-items: baseline;
 
@@ -108,7 +106,6 @@ export const TypewriterWrapper = styled.div`
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,4 +117,25 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+`;
+
+export const ScrollDownWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  background: transparent;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+`;
+
+export const ScrollDown = styled(Link)`
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 `;

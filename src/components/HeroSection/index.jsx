@@ -13,8 +13,11 @@ import {
   ArrowRight,
   TypewriterWrapper,
   HeroPPadded,
+  ScrollDownWrapper,
+  ScrollDown,
 } from "./HeroElements";
 import { ButtonExt } from "../ButtonElement";
+import { FaChevronDown } from "react-icons/fa";
 
 const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -37,7 +40,9 @@ const HeroSection = () => {
         />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Hey! I'm Aaron.</HeroH1>
+        <div>
+          <HeroH1>Welcome!</HeroH1>
+        </div>
         <TypewriterWrapper>
           <HeroP>I'm</HeroP>
           <HeroPPadded> </HeroPPadded>
@@ -56,9 +61,6 @@ const HeroSection = () => {
             }}
           />
         </TypewriterWrapper>
-        <HeroP>
-          Please scroll for a look at look at my current/past projects.
-        </HeroP>
         <HeroBtnWrapper>
           <ButtonExt
             href="mailto:aaron@keisler.dev"
@@ -68,9 +70,23 @@ const HeroSection = () => {
             primary="true"
             dark="true"
           >
-            Send me a message. {isHovered ? <ArrowForward /> : <ArrowRight />}
+            Please send me a message to connect.{" "}
+            {isHovered ? <ArrowForward /> : <ArrowRight />}
           </ButtonExt>
         </HeroBtnWrapper>
+        <ScrollDownWrapper>
+          <ScrollDown
+            to="about"
+            data-testid="scroll-link"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            <FaChevronDown size={30} color={"white"} />
+          </ScrollDown>
+        </ScrollDownWrapper>
       </HeroContent>
     </HeroContainer>
   );
