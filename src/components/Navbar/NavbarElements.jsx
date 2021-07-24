@@ -116,7 +116,7 @@ export const NavSocialLink = styled.a`
   border-radius: 50px;
   background: #887135;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 2px 22px;
   margin: 0 5px;
   font-size: 16px;
   outline: none;
