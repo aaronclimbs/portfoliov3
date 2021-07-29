@@ -17,14 +17,14 @@ const AboutSection = () => {
             junior high school, but I only discovered the joy of solving
             problems with code after I entered the workforce. I gain immense
             satisfaction from both the simple (writing a Bash or Python script
-            to automate small repetitive work processes) or the more complex
+            to automate small repetitive work processes) and the more complex
             (building a web app from the ground up).
           </Subtitle>
           <Subtitle darkText>
             In my first professional role, I was employed as a paralegal in a
             large law firm. One of my earliest tasks was to compile and update
             an Excel workbook of new financial filings each week. After spending
-            a couple weeks manually pulling and inputting the new data, I
+            a couple of weeks manually pulling and inputting the new data, I
             discovered Selenium and Python (then at version 2.7) and spent a
             weekend of my own time crafting a script to eliminate the long,
             repetitive parts of this process. The code was ugly and not at all
